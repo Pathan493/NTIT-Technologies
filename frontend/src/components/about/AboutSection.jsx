@@ -2,83 +2,63 @@ import "./AboutSection.css";
 
 function AboutSection() {
   return (
-    <section className="about">
+    <section className="about-section">
 
-      <div className="about-header">
+      <div className="about-container">
 
-        <span>ABOUT NTIT TECHNOLOGIES</span>
+        {/* Left Side */}
 
-        <h2>
-          Learn. Build. Grow.
-        </h2>
+        <div className="about-left">
 
-        <p>
-          NTIT Technologies is committed to providing practical,
-          industry-oriented cloud training through live instructor-led
-          sessions.
+          <span className="section-tag">
+            WHO WE ARE
+          </span>
 
-          Our programs focus on real-world scenarios, hands-on
-          learning, interview preparation, resume guidance, and
-          continuous mentor support.
-
-          Whether you're from an IT or Non-IT background,
-          we help you build the confidence and skills required
-          to begin your Cloud Data Engineering journey.
-        </p>
-
-      </div>
-
-      <div className="about-cards">
-
-        <div className="about-card">
-
-          <div className="icon">🎓</div>
-
-          <h3>Live Training</h3>
+          <h2>
+            Practical Cloud Training
+            <br />
+            Designed for Career Growth
+          </h2>
 
           <p>
-            Instructor-led online sessions with
-            interactive learning.
+            NTIT Technologies is a cloud training institute focused on helping
+            learners build strong technical skills through practical learning.
+            Our programs emphasize understanding concepts, applying them in
+            hands-on environments, and preparing confidently for technical
+            interviews.
+          </p>
+
+          <p>
+            We believe that consistent practice, live interaction with mentors,
+            and structured guidance are the foundations of long-term success in
+            cloud and data engineering careers.
           </p>
 
         </div>
 
-        <div className="about-card">
+        {/* Right Side */}
 
-          <div className="icon">💻</div>
+        <div className="about-right">
 
-          <h3>Practical Learning</h3>
+          <div className="feature-card">
+            <h3>💻 Live Interactive Classes</h3>
+            <p>Instructor-led sessions with real-time doubt clearing.</p>
+          </div>
 
-          <p>
-            Industry-oriented scenarios and
-            hands-on practice.
-          </p>
+          <div className="feature-card">
+            <h3>⚡ Hands-on Learning</h3>
+            <p>Practice concepts through guided labs and exercises.</p>
+          </div>
 
-        </div>
+          <div className="feature-card">
+            <h3>🎯 Interview Preparation</h3>
+            <p>Resume guidance and technical interview readiness.</p>
+          </div>
 
-        <div className="about-card">
-
-          <div className="icon">🎯</div>
-
-          <h3>Interview Preparation</h3>
-
-          <p>
-            Resume guidance and mock interview
-            preparation.
-          </p>
-
-        </div>
-
-        <div className="about-card">
-
-          <div className="icon">👨‍🏫</div>
-
-          <h3>Mentor Support</h3>
-
-          <p>
-            Continuous support throughout your
-            learning journey.
-          </p>
+          <div className="feature-card">
+            <h3>🤝 Mentor Support</h3>
+            <p>Continuous guidance throughout your learning journey.</p>
+          </div>
 
         </div>
 

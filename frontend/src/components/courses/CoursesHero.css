@@ -1,0 +1,46 @@
+.courses-hero {
+  background: #1E3A8A;
+  padding: 110px 8%;
+}
+
+.courses-hero-container {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.courses-badge {
+  display: inline-block;
+  background: #F97316;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 40px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.courses-hero h1 {
+  color: white;
+  font-size: 64px;
+  line-height: 1.15;
+  margin-bottom: 30px;
+  font-weight: 800;
+}
+
+.courses-hero p {
+  max-width: 850px;
+  margin: auto;
+  color: #E5E7EB;
+  font-size: 22px;
+  line-height: 1.8;
+}
+
+@media (max-width: 992px) {
+  .courses-hero h1 {
+    font-size: 46px;
+  }
+
+  .courses-hero p {
+    font-size: 18px;
+  }
+}

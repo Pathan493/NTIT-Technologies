@@ -1,86 +1,87 @@
-.about{
+.about-section{
     padding:100px 8%;
     background:#ffffff;
 }
 
-.about-header{
-    text-align:center;
-    max-width:900px;
+.about-container{
+    max-width:1300px;
     margin:auto;
-}
-
-.about-header span{
-    color:#FF6B00;
-    font-weight:600;
-    letter-spacing:1px;
-}
-
-.about-header h2{
-    font-size:48px;
-    margin:20px 0;
-    color:#1E3A8A;
-}
-
-.about-header p{
-    font-size:19px;
-    line-height:34px;
-    color:#555;
-}
-
-.about-cards{
-
-    margin-top:70px;
 
     display:grid;
-
-    grid-template-columns:repeat(4,1fr);
-
-    gap:30px;
-
+    grid-template-columns:1.1fr 1fr;
+    gap:70px;
+    align-items:center;
 }
 
-.about-card{
+.section-tag{
+    display:inline-block;
 
-    background:#F8FAFC;
+    background:#F97316;
+    color:white;
 
-    padding:40px 30px;
+    padding:10px 22px;
 
-    border-radius:18px;
+    border-radius:40px;
 
-    text-align:center;
+    font-weight:600;
 
-    transition:.3s;
-
-    box-shadow:0 10px 30px rgba(0,0,0,.06);
-
+    margin-bottom:25px;
 }
 
-.about-card:hover{
-
-    transform:translateY(-8px);
-
-}
-
-.icon{
-
+.about-left h2{
     font-size:48px;
-
-    margin-bottom:20px;
-
-}
-
-.about-card h3{
-
-    margin-bottom:15px;
-
     color:#1E3A8A;
-
+    margin-bottom:25px;
+    line-height:1.2;
 }
 
-.about-card p{
+.about-left p{
+    font-size:18px;
+    line-height:1.9;
+    color:#555;
+    margin-bottom:20px;
+}
 
+.about-right{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.feature-card{
+    background:#fff;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.feature-card:hover{
+    transform:translateY(-8px);
+}
+
+.feature-card h3{
+    color:#1E3A8A;
+    margin-bottom:15px;
+}
+
+.feature-card p{
     color:#666;
+    line-height:1.7;
+}
 
-    line-height:28px;
+@media(max-width:992px){
+
+.about-container{
+grid-template-columns:1fr;
+}
+
+.about-right{
+grid-template-columns:1fr;
+}
+
+.about-left h2{
+font-size:36px;
+}
 
 }

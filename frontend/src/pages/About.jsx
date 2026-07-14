@@ -1,8 +1,18 @@
+import AboutHero from "../components/about/AboutHero";
+import AboutSection from "../components/about/AboutSection";
+import MissionVision from "../components/about/MissionVision";
+import LearnWithNTIT from "../components/about/LearnWithNTIT";
+import CTA from "../components/cta/CTA";
+
 function About() {
   return (
-    <div>
-      <h1>About NTIT Technologies</h1>
-    </div>
+    <>
+      <AboutHero />
+      <AboutSection />
+      <MissionVision />
+      <LearnWithNTIT />
+      <CTA />
+    </>
   );
 }
 

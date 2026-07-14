@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Courses from "./pages/courses/Courses";
+import CourseDetails from "./pages/courses/CourseDetails";
 
 // Authentication
 import Login from "./pages/auth/Login";
@@ -29,21 +30,49 @@ function App() {
 
         {/* Public Website */}
         <Route element={<PublicLayout />}>
+
           <Route path="/" element={<Home />} />
+
           <Route path="/about" element={<About />} />
+
           <Route path="/courses" element={<Courses />} />
+
+          <Route
+            path="/courses/:slug"
+            element={<CourseDetails />}
+          />
+
           <Route path="/contact" element={<Contact />} />
+
         </Route>
 
         {/* Authentication */}
+
         <Route path="/login" element={<Login />} />
+
         <Route path="/register" element={<Register />} />
-        <Route path="/forgot-password" element={<ForgotPassword />} />
+
+        <Route
+          path="/forgot-password"
+          element={<ForgotPassword />}
+        />
 
         {/* Dashboards */}
-        <Route path="/student/dashboard" element={<StudentDashboard />} />
-        <Route path="/trainer/dashboard" element={<TrainerDashboard />} />
-        <Route path="/admin/dashboard" element={<AdminDashboard />} />
+
+        <Route
+          path="/student/dashboard"
+          element={<StudentDashboard />}
+        />
+
+        <Route
+          path="/trainer/dashboard"
+          element={<TrainerDashboard />}
+        />
+
+        <Route
+          path="/admin/dashboard"
+          element={<AdminDashboard />}
+        />
 
       </Routes>
     </BrowserRouter>

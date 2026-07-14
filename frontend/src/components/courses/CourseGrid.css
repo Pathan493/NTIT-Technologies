@@ -1,0 +1,13 @@
+.course-grid-section{
+    padding:90px 8%;
+    background:#F8FAFC;
+}
+
+.course-grid{
+    max-width:1300px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(380px,1fr));
+    gap:35px;
+}

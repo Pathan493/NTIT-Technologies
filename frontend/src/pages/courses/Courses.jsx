@@ -1,8 +1,14 @@
+import CoursesHero from "../../components/courses/CoursesHero";
+import CourseGrid from "../../components/courses/CourseGrid";
+import CTA from "../../components/cta/CTA";
+
 function Courses() {
   return (
-    <div style={{ padding: "50px" }}>
-      <h1>Explore Courses</h1>
-    </div>
+    <>
+      <CoursesHero />
+      <CourseGrid />
+      <CTA />
+    </>
   );
 }
 
